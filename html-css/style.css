@@ -1,0 +1,96 @@
+div {
+    width: 70%;
+    margin: auto;
+}
+
+p{
+    border: 3px solid aliceblue;
+    
+}
+
+h1 {
+    color: rgb(255, 0, 0);
+    border: 2px solid white;
+    position: sticky;
+    top: 30px;
+}
+
+h2 {
+    border: dashed white;
+    color: red;
+}
+ul {
+    color: aliceblue;
+}
+
+img {
+    border: 2px solid rgb(225, 13, 13);
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+
+body {
+    color: aliceblue;
+    background-image: url(../html-css/images/cog.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#huruf {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.warna {
+    color: chartreuse;
+}
+
+.model {
+    font-weight: bold;
+}
+
+.ukuran {
+    font-size: 60px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    font-family: Arial, Helvetica, sans-serif;
+    background: lightskyblue;
+    list-style: none;
+    margin: 0;
+    padding-left: 0px;
+}
+
+ul li {
+    color: antiquewhite;
+    background: lightskyblue;
+    display: block;
+    border: 1px blue;
+    float: left;
+    padding: 10px;
+    position: relative;
+    text-decoration: none;
+}
+
+ul li a {
+    color: antiquewhite;
+}
+
+ul li:hover{
+    background: red;
+    cursor: pointer;
+}
+
+ul li ul {
+    background: lightskyblue;
+    visibility: hidden;
+    position: absolute;
+    margin-top: irem;
+    left: 0;
+    display: none;
+}
