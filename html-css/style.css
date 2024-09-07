@@ -1,41 +1,45 @@
-div {
-    width: 70%;
+* {
+    margin: 0;
+}
+
+.content {
+    margin-top: 2%;
+}
+
+.wrapper {
+    width: 80%;
     margin: auto;
 }
 
-p{
-    border: 3px solid aliceblue;
-    
+header img {
+    margin: -2%;
+    width: 100px;
+    float: left;
 }
 
-h1 {
-    color: rgb(255, 0, 0);
-    border: 2px solid white;
-    position: sticky;
-    top: 30px;
+header h1 {
+    margin: 2% 0 -5% -3%;
 }
 
-h2 {
-    border: dashed white;
-    color: red;
-}
-ul {
-    color: aliceblue;
+nav {
+    clear: both;
 }
 
-img {
-    border: 2px solid rgb(225, 13, 13);
-    margin-top: 50px;
-    margin-right: 50px;
-    margin-bottom: 100px;
+nav ul {
+    margin: 5% 0 0;
 }
 
-body {
-    color: aliceblue;
-    background-image: url(../html-css/images/cog.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+section {
+    margin-top: 2%;
+}
+
+section p {
+    margin-top: 2%;
+}
+
+footer {
+    margin: 2%;
+    text-align: center;
 }
 
 #huruf {
@@ -43,15 +47,15 @@ body {
 }
 
 .warna {
-    color: chartreuse;
+    color: rgb(0, 34, 255);
 }
 
 .model {
-    font-weight: bold;
+    font-style: italic;
 }
 
 .ukuran {
-    font-size: 60px;
+    font-size: 1rem;
 }
 
 a {
@@ -60,7 +64,7 @@ a {
 
 ul {
     font-family: Arial, Helvetica, sans-serif;
-    background: lightskyblue;
+    background: darkcyan;
     list-style: none;
     margin: 0;
     padding-left: 0px;
@@ -68,10 +72,9 @@ ul {
 
 ul li {
     color: antiquewhite;
-    background: lightskyblue;
-    display: block;
+    background: darkcyan;
+    display: inline-block;
     border: 1px blue;
-    float: left;
     padding: 10px;
     position: relative;
     text-decoration: none;
@@ -82,15 +85,32 @@ ul li a {
 }
 
 ul li:hover{
-    background: red;
+    background: lawngreen;
     cursor: pointer;
 }
 
 ul li ul {
-    background: lightskyblue;
+    background: darkcyan;
     visibility: hidden;
     position: absolute;
-    margin-top: irem;
+    margin-top: 0.6rem;
     left: 0;
     display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background: darksalmon;
+    }
 }
